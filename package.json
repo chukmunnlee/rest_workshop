@@ -1,0 +1,25 @@
+{
+  "name": "rest_workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://chukmunnlee@github.com/chukmunnlee/rest_workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chukmunnlee/rest_workshop/issues"
+  },
+  "homepage": "https://github.com/chukmunnlee/rest_workshop#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "uuid": "^3.4.0"
+  }
+}
