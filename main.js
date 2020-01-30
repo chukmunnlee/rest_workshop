@@ -33,7 +33,16 @@ app.get('/api/restaurants',
 				.json({ error: 'invalid offset or query' })
 
 		resp.status(200).type('application/json')
-			.json(db.slice(offset, offset + limit))
+			.json(
+				db.slice(offset, offset + limit)
+					.map(v => {
+						return ({
+							name: v.name,
+							type_of_food: v.type_of_food,
+							url: `/api/restaurant/${v._id.$oid}`
+						})
+					})
+			)
 	}
 );
 
